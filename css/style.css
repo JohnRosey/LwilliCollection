@@ -108,7 +108,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+body {
+  background: url(Kassena.jpeg) repeat-x;
+}
 body {
   margin: 0;
   padding: 0;
