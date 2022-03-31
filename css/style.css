@@ -3017,6 +3017,25 @@ input.searchbox:focus {
 
 /* Pricing Tables
 -------------------------------------------------------*/
+.pricing-titlesn {
+  background-image: url("../assets/img/senegal.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px 30px;
+}
+.pricing-titlebf {
+  background-image: url("../assets/img/burkina.png");
+  background-size: cover ;
+  background-repeat: no-repeat;
+  padding: 35px 30px;
+}
+.pricing-titlefr {
+  background-image: url("../assets/img/france.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px 30px;
+
+}
 .pricing-3-col {
   background-color: #f7f7f7;
   text-align: center;
@@ -3038,7 +3057,7 @@ input.searchbox:focus {
 }
 
 .pricing-price {
-  font-size: 25px;
+  font-size: 17px;
   color: #111;
   background-color: #fff;
   -webkit-border-radius: 50%;
