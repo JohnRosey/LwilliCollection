@@ -141,7 +141,7 @@ body img {
   user-select: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   text-transform: uppercase;
@@ -172,6 +172,13 @@ h5 {
 
 h6 {
   font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+
 }
 
 p {
