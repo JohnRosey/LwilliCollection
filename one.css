@@ -73,6 +73,9 @@ h4.headertekst {
 h2.headH2{
   text-align: center;
 }
+h6 {
+color: #fff;
+}
 .content .info h2{
   color: #D9691A;
   font-size: 55px;
