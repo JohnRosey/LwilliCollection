@@ -108,7 +108,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-
+body {
+  background: url(Kassena.jpeg) repeat-x;
+}
 body {
   margin: 0;
   padding: 0;
@@ -139,7 +141,7 @@ body img {
   user-select: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
   font-family: "Montserrat", sans-serif;
   margin-top: 0;
   text-transform: uppercase;
@@ -170,6 +172,13 @@ h5 {
 
 h6 {
   font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+
 }
 
 p {
@@ -3015,6 +3024,25 @@ input.searchbox:focus {
 
 /* Pricing Tables
 -------------------------------------------------------*/
+.pricing-titlesn {
+  background-image: url("../assets/img/senegal.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px 30px;
+}
+.pricing-titlebf {
+  background-image: url("../assets/img/burkina.png");
+  background-size: cover ;
+  background-repeat: no-repeat;
+  padding: 35px 30px;
+}
+.pricing-titlefr {
+  background-image: url("../assets/img/france.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 35px 30px;
+
+}
 .pricing-3-col {
   background-color: #f7f7f7;
   text-align: center;
@@ -3036,7 +3064,7 @@ input.searchbox:focus {
 }
 
 .pricing-price {
-  font-size: 25px;
+  font-size: 17px;
   color: #111;
   background-color: #fff;
   -webkit-border-radius: 50%;
