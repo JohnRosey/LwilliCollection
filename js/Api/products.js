@@ -3,11 +3,11 @@ const products = [
         id:1,
         couleur:'noir',
         sexe:'Homme',
-        collection:'1',
+        collection:'2',
         type:'',
-        caracteristique:['Bracelet en cuir'],
+        caracteristique:['Bracelet en cuir Homme'],
         prix:70,
-        image:'img/revolution/black.jpeg',
+        image:['img/1.jpg'],
     },
     {
         id:2,
@@ -17,7 +17,7 @@ const products = [
         type:'',
         caracteristique:[''],
         prix:350,
-        image:'img/revolution/black.jpeg',
+        image:'img/3.jpg',
     },
     {
         id:3,
