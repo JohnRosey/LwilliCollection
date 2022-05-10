@@ -148,29 +148,21 @@
                 </a>
               </div>
 
-              <div class="item">
-                <a href="#">
-                  <img src="img/project_2.jpg" alt="">
-                </a>
-              </div> 
-
-              <div class="item">
-                <a href="#">
-                  <img src="img/project_3.jpg" alt="" />
-                </a>
-              </div>
+             
 
             </div> <!-- end owl carousel -->
           </div> <!-- end slider -->
 
           <div class="col-md-4">
             <div class="portfolio-description">
-              <h2 id="couleur">Noir </h2>
+              <h2 id="couleur">Couleur </h2>
               <p></p>
               <ul>
-                <li id="sexe"><span>Pour:</span> Homme</li>
-                <li><span>Collecttion 1:</span><a href="#"> Mockups</a></li>
-                <li><span>Caractéristiques :</span><a href="#"> Bracelet en cuir</a></li>
+                <li id="sexe"><span>Pour: </span> </li>
+               <!--<li id="collection"><span>Collection:</span></li> -->
+                <li id="caracteristique"><span>Prix :</span>35000<a href="#"> </a></li>
+               <!-- <li id="prix"><span>Prix  :</span>35000</li>-->
+
               </ul>
               
                 <h6>Share:</h6>
@@ -181,10 +173,25 @@
         </div>
       </div>
     </section> <!-- end portfolio single -->
+ <!-- Call to Action -->
+ <section class="call-to-action bg-dark">
+  <div class="container">
+    <div class="row">
 
+      <div class="col-md-9 col-xs-12">    
+        <h2>Êtes-vous prêt à acheter?</h2>
+      </div>
+      
+      <div class="col-md-3 col-xs-12 cta-button">
+        <a href="one.html#vente" class="btn btn-lg btn-color">Acheter</a>
+      </div>
+
+    </div>
+  </div>
+</section> <!-- end call to action -->
 
     <!-- Related Projects -->
-    <section class="related-projects pb-90">
+  <!--   <section class="related-projects pb-90">
       <div class="container">
         <h4 class="heading-inline">De la meme collection </h4>
         <div class="customNavigation right">
@@ -195,78 +202,54 @@
 
           <div id="owl-related-works" class="owl-carousel owl-theme">
 
-            <div class="work-item mockups branding">
-              <div class="work-container">
-                <div class="work-img">
-                  <img src="img/project_5.jpg" alt="">
-                  <div class="portfolio-overlay">
-                    <div class="project-icons">
-                      <a href="img/project_5_big.jpg" class="lightbox-gallery" title="Cup Mockup"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="work-description">
-                  <h3><a href="#">Cup Mockup</a></h3>
-                  <span><a href="#">Branding</a></span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item branding print">
-              <div class="work-container">
-                <div class="work-img">
-                  <img src="img/project_2.jpg" alt="">
-                  <div class="portfolio-overlay">
-                    <div class="project-icons">
-                      <a href="http://vimeo.com/19270640" class="lightbox-gallery mfp-iframe"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="work-description">
-                  <h3><a href="#">Vimeo Lightbox</a></h3>
-                  <span><a href="#">Branding</a></span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item branding">
-              <div class="work-container">
-                <div class="work-img">
-                  <img src="img/project_3.jpg" alt="">
-                  <div class="portfolio-overlay">
-                    <div class="project-icons">
-                      <a href="https://www.youtube.com/watch?v=Scxs7L0vhZ4?autoplay=1" class="lightbox-gallery mfp-iframe"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="work-description">
-                  <h3><a href="#">Youtube Lightbox</a></h3>
-                  <span><a href="#">Branding</a></span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
-            <div class="work-item print mockups">
-              <div class="work-container">
-                <div class="work-img">
-                  <img src="img/project_4.jpg" alt="">
-                  <div class="portfolio-overlay">
-                    <div class="project-icons">
-                      <a href="img/project_4_big.jpg" class="lightbox-gallery" title="Brod Identity"><i class="fa fa-search"></i></a>
-                      <a href="portfolio-single.html" class="project-icon"><i class="fa fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
-                <div class="work-description">
-                  <h3><a href="#">Brod Identity</a></h3>
-                  <span><a href="#">Branding</a></span>
-                </div>
-              </div> 
-            </div> <!-- end work-item -->
-
+            <script>             
+              $(document).ready(function(){
+                const id = getParameter('id');
+                
+                console.log('id',id);
+                if(id){
+                  const newProduct = products.filter(product => product.collection == id);
+                 // console.log("List of products", newProduct);
+        
+                  newProduct.forEach(function(product,index){
+                    //console.log(product);
+        
+        
+        
+        
+                    let productHtml = '<div class="work-item mockups branding">'
+                      productHtml +=' <div class="work-container">';
+                      productHtml +=' <div class="work-img">';
+                      productHtml +='  <img src="' + product.image + '" alt=""/>';
+                      productHtml +='  <div class="portfolio-overlay">';
+                      productHtml +='    <div class="project-icons">';
+                      productHtml +=' <a href= "col2p1.html?id='+product.id+'" class="project-icon"><i class="fa fa-link"></i></a>';
+                      productHtml +=' </div>'; 
+                      productHtml +=' </div>';
+                      productHtml +=' </div>';
+                      productHtml +=' <div class="work-description">';
+                      productHtml +=' <h3><a >'+product.description+'</a></h3>';
+                      productHtml +=' <span><a href="#">Nouvelle Collection </a></span>';
+                      productHtml +=' </div>';
+                      productHtml +=' </div>';
+                      productHtml +=' </div>';
+        
+        
+        
+                      console.log(productHtml);
+        
+                     $('#productList').append(productHtml);
+        
+                    /*console.log('%c React ', 
+                    'color: white; background-color: #61dbfb', 
+                    'Have fun using React!');*/
+                  }) 
+                }
+                
+                  
+              });
+          </script>
+        -->
           </div> <!-- end owl carousel-->
         </div>
       </div>
@@ -327,10 +310,13 @@
       const newProduct = products.filter(product => product.id == id)[0];
       //console.log(newProduct)
       
-      $("#couleur").text(newProduct.couleur)
-      $("#sexe").html($('#sexe').html() + newProduct.sexe);
-      $("#prix").text(newProduct.prix)
-      $('#img').attr('src', newProduct.image)
+      $("#couleur").text(newProduct.couleur);
+      $("#sexe").html($('#sexe').html() + newProduct.sexe); 
+       $("#collection").text(newProduct.collection);
+      $("#description").text(newProduct.description);
+      $("caracteristique").text(newProduct.caracteristique); 
+      $("#prix").text(newProduct.prix);
+      $('#img').attr('src', newProduct.image);
 
     })
   </script>
